@@ -6,8 +6,8 @@
  */
 definition(
     name: "Concord 4 Integration",
-    namespace: "csdozier",
-    author: "csdozier",
+    namespace: "SannhetJaeger",
+    author: "SannhetJaeger",
     description: "Handles the REST callback from concord and set virtual devices",
     category: "My Apps",
     iconUrl: "https://s3.amazonaws.com/smartapp-icons/Labs/Cat-ST-Labs.png",
@@ -29,9 +29,61 @@ preferences {
         input "zone8", "capability.contactSensor", title:"Zone 8"
         input "zone9", "capability.contactSensor", title:"Zone 9"
         input "zone10", "capability.contactSensor", title:"Zone 10"
+        input "zone11", "capability.contactSensor", title:"Zone 11"
+        input "zone12", "capability.contactSensor", title:"Zone 12"
         input "zone13", "capability.contactSensor", title:"Zone 13"
         input "zone14", "capability.contactSensor", title:"Zone 14"
         input "zone15", "capability.contactSensor", title:"Zone 15"
+        input "zone16", "capability.contactSensor", title:"Zone 16"
+        input "zone17", "capability.contactSensor", title:"Zone 17"
+        input "zone18", "capability.contactSensor", title:"Zone 18"
+        input "zone19", "capability.contactSensor", title:"Zone 19"
+        input "zone20", "capability.contactSensor", title:"Zone 20"
+		input "zone21", "capability.contactSensor", title:"Zone 21"
+        input "zone22", "capability.contactSensor", title:"Zone 22"
+        input "zone23", "capability.contactSensor", title:"Zone 23"
+        input "zone24", "capability.contactSensor", title:"Zone 24"
+        input "zone25", "capability.contactSensor", title:"Zone 25"
+        input "zone26", "capability.contactSensor", title:"Zone 26"
+ 		input "zone27", "capability.contactSensor", title:"Zone 27"
+        input "zone28", "capability.contactSensor", title:"Zone 28"
+        input "zone29", "capability.contactSensor", title:"Zone 29"
+        input "zone30", "capability.contactSensor", title:"Zone 30"
+        input "zone31", "capability.contactSensor", title:"Zone 31"
+        input "zone32", "capability.contactSensor", title:"Zone 32"
+        input "zone33", "capability.contactSensor", title:"Zone 33"
+        input "zone34", "capability.contactSensor", title:"Zone 34"
+        input "zone35", "capability.contactSensor", title:"Zone 35"
+        input "zone36", "capability.contactSensor", title:"Zone 36"
+ 		input "zone37", "capability.contactSensor", title:"Zone 37"
+        input "zone38", "capability.contactSensor", title:"Zone 38"
+        input "zone39", "capability.contactSensor", title:"Zone 39"
+        input "zone40", "capability.contactSensor", title:"Zone 40"
+		input "zone41", "capability.contactSensor", title:"Zone 41"
+        input "zone42", "capability.contactSensor", title:"Zone 42"
+        input "zone43", "capability.contactSensor", title:"Zone 43"
+        input "zone44", "capability.contactSensor", title:"Zone 44"
+        input "zone45", "capability.contactSensor", title:"Zone 45"
+        input "zone46", "capability.contactSensor", title:"Zone 46"
+ 		input "zone47", "capability.contactSensor", title:"Zone 47"
+        input "zone48", "capability.contactSensor", title:"Zone 48"
+        input "zone49", "capability.contactSensor", title:"Zone 49"
+        input "zone50", "capability.contactSensor", title:"Zone 50"
+		input "zone51", "capability.contactSensor", title:"Zone 51"
+        input "zone52", "capability.contactSensor", title:"Zone 52"
+        input "zone53", "capability.contactSensor", title:"Zone 53"
+        input "zone54", "capability.contactSensor", title:"Zone 54"
+        input "zone55", "capability.contactSensor", title:"Zone 55"
+        input "zone56", "capability.contactSensor", title:"Zone 56"
+ 		input "zone57", "capability.contactSensor", title:"Zone 57"
+        input "zone58", "capability.contactSensor", title:"Zone 58"
+        input "zone59", "capability.contactSensor", title:"Zone 59"
+        input "zone60", "capability.contactSensor", title:"Zone 60"
+		input "zone61", "capability.contactSensor", title:"Zone 61"
+        input "zone62", "capability.contactSensor", title:"Zone 62"
+        input "zone63", "capability.contactSensor", title:"Zone 63"
+        input "zone64", "capability.contactSensor", title:"Zone 64"
+        input "zone65", "capability.contactSensor", title:"Zone 65"
 	}
     section("Presence Options") {
         input "autoArmDoorLock", "capability.lock", title: "Arm when door locked and all away and disarm on return with code?", required: false
@@ -139,8 +191,8 @@ def updated() {
 
 def initialize() {
 	subscribe(location, "alarmSystemStatus", alarmHandler)
-
-	for(int i=1; i<=25; i++ )
+    // Changed from 25 to 65
+	for(int i=1; i<=65; i++ )
     {
 		subscribe( concord4, "zone${i}.open", zoneOpen )
     	subscribe( concord4, "zone${i}.closed", zoneClose )
@@ -244,6 +296,12 @@ def zoneOpen(evt)
         case "zone10":
         zone10.open( getZoneName(evt.name) )
         break;    
+        case "zone11":
+        zone11.open( getZoneName(evt.name) )
+        break;
+        case "zone12":
+        zone12.open( getZoneName(evt.name) )
+        break;        
         case "zone13":
         zone13.open( getZoneName(evt.name) )
         break;
@@ -253,6 +311,156 @@ def zoneOpen(evt)
         case "zone15":
         zone15.open( getZoneName(evt.name) )
         break;  
+        case "zone16":
+        zone16.open( getZoneName(evt.name) )
+        break;        
+        case "zone17":
+        zone17.open( getZoneName(evt.name) )
+        break;
+        case "zone18":
+        zone18.open( getZoneName(evt.name) )
+        break;
+        case "zone19":
+        zone19.open( getZoneName(evt.name) )
+        break;
+        case "zone20":
+        zone20.open( getZoneName(evt.name) )
+        break;    
+        case "zone21":
+        zone21.open( getZoneName(evt.name) )
+        break;
+        case "zone22":
+        zone22.open( getZoneName(evt.name) )
+        break;
+        case "zone23":
+        zone23.open( getZoneName(evt.name) )
+        break;
+        case "zone24":
+        zone24.open( getZoneName(evt.name) )
+        break;
+        case "zone25":
+        zone25.open( getZoneName(evt.name) )
+        break;
+        case "zone26":
+        zone26.open( getZoneName(evt.name) )
+        break;        
+        case "zone27":
+        zone27.open( getZoneName(evt.name) )
+        break;
+        case "zone28":
+        zone28.open( getZoneName(evt.name) )
+        break;
+        case "zone29":
+        zone29.open( getZoneName(evt.name) )
+        break;
+        case "zone30":
+        zone30.open( getZoneName(evt.name) )
+        break;    
+        case "zone31":
+        zone31.open( getZoneName(evt.name) )
+        break;
+        case "zone32":
+        zone32.open( getZoneName(evt.name) )
+        break;
+        case "zone33":
+        zone33.open( getZoneName(evt.name) )
+        break;
+        case "zone34":
+        zone34.open( getZoneName(evt.name) )
+        break;
+        case "zone35":
+        zone35.open( getZoneName(evt.name) )
+        break;
+        case "zone36":
+        zone36.open( getZoneName(evt.name) )
+        break;        
+        case "zone37":
+        zone37.open( getZoneName(evt.name) )
+        break;
+        case "zone38":
+        zone8.open( getZoneName(evt.name) )
+        break;
+        case "zone39":
+        zone39.open( getZoneName(evt.name) )
+        break;
+        case "zone40":
+        zone40.open( getZoneName(evt.name) )
+        break;    
+        case "zone41":
+        zone41.open( getZoneName(evt.name) )
+        break;
+        case "zone42":
+        zone42.open( getZoneName(evt.name) )
+        break;
+        case "zone43":
+        zone43.open( getZoneName(evt.name) )
+        break;
+        case "zone44":
+        zone44.open( getZoneName(evt.name) )
+        break;
+        case "zone45":
+        zone45.open( getZoneName(evt.name) )
+        break;
+        case "zone46":
+        zone46.open( getZoneName(evt.name) )
+        break;        
+        case "zone47":
+        zone47.open( getZoneName(evt.name) )
+        break;
+        case "zone48":
+        zone48.open( getZoneName(evt.name) )
+        break;
+        case "zone49":
+        zone49.open( getZoneName(evt.name) )
+        break;
+        case "zone50":
+        zone50.open( getZoneName(evt.name) )
+        break;    
+        case "zone51":
+        zone51.open( getZoneName(evt.name) )
+        break;
+        case "zone52":
+        zone52.open( getZoneName(evt.name) )
+        break;
+        case "zone53":
+        zone53.open( getZoneName(evt.name) )
+        break;
+        case "zone54":
+        zone54.open( getZoneName(evt.name) )
+        break;
+        case "zone55":
+        zone55.open( getZoneName(evt.name) )
+        break;
+        case "zone56":
+        zone56.open( getZoneName(evt.name) )
+        break;        
+        case "zone57":
+        zone57.open( getZoneName(evt.name) )
+        break;
+        case "zone58":
+        zone58.open( getZoneName(evt.name) )
+        break;
+        case "zone59":
+        zone59.open( getZoneName(evt.name) )
+        break;
+        case "zone60":
+        zone60.open( getZoneName(evt.name) )
+        break;    
+        case "zone61":
+        zone61.open( getZoneName(evt.name) )
+        break;
+        case "zone62":
+        zone62.open( getZoneName(evt.name) )
+        break;
+        case "zone63":
+        zone63.open( getZoneName(evt.name) )
+        break;
+        case "zone64":
+        zone64.open( getZoneName(evt.name) )
+        break;
+        case "zone65":
+        zone65.open( getZoneName(evt.name) )
+        break;
     }
 
     // If the alarm is armed, send a notification if required.
@@ -304,6 +512,12 @@ def zoneClose(evt)
         case "zone10":
         zone10.closed( getZoneName(evt.name) )
         break;
+        case "zone11":
+        zone11.closed( getZoneName(evt.name) )
+        break;
+        case "zone12":
+        zone12.closed( getZoneName(evt.name) )
+        break;
         case "zone13":
         zone13.closed( getZoneName(evt.name) )
         break;
@@ -312,7 +526,157 @@ def zoneClose(evt)
         break;        
         case "zone15":
         zone15.closed( getZoneName(evt.name) )
-        break;  
+        break;
+        case "zone16":
+        zone16.closed( getZoneName(evt.name) )
+        break;        
+        case "zone17":
+        zone17.closed( getZoneName(evt.name) )
+        break;
+        case "zone18":
+        zone18.closed( getZoneName(evt.name) )
+        break;
+        case "zone19":
+        zone19.closed( getZoneName(evt.name) )
+        break;
+        case "zone20":
+        zone20.closed( getZoneName(evt.name) )
+        break;
+        case "zone21":
+        zone21.closed( getZoneName(evt.name) )
+        break;
+        case "zone22":
+        zone22.closed( getZoneName(evt.name) )
+        break;
+        case "zone23":
+        zone23.closed( getZoneName(evt.name) )
+        break;
+        case "zone24":
+        zone24.closed( getZoneName(evt.name) )
+        break;
+        case "zone25":
+        zone25.closed( getZoneName(evt.name) )
+        break;
+        case "zone26":
+        zone26.closed( getZoneName(evt.name) )
+        break;        
+        case "zone27":
+        zone27.closed( getZoneName(evt.name) )
+        break;
+        case "zone28":
+        zone28.closed( getZoneName(evt.name) )
+        break;
+        case "zone29":
+        zone29.closed( getZoneName(evt.name) )
+        break;
+        case "zone30":
+        zone30.closed( getZoneName(evt.name) )
+        break;
+        case "zone31":
+        zone31.closed( getZoneName(evt.name) )
+        break;
+        case "zone32":
+        zone32.closed( getZoneName(evt.name) )
+        break;
+        case "zone33":
+        zone33.closed( getZoneName(evt.name) )
+        break;
+        case "zone34":
+        zone34.closed( getZoneName(evt.name) )
+        break;
+        case "zone35":
+        zone35.closed( getZoneName(evt.name) )
+        break;
+        case "zone36":
+        zone36.closed( getZoneName(evt.name) )
+        break;        
+        case "zone37":
+        zone37.closed( getZoneName(evt.name) )
+        break;
+        case "zone38":
+        zone38.closed( getZoneName(evt.name) )
+        break;
+        case "zone39":
+        zone39.closed( getZoneName(evt.name) )
+        break;
+        case "zone40":
+        zone40.closed( getZoneName(evt.name) )
+        break;
+        case "zone41":
+        zone41.closed( getZoneName(evt.name) )
+        break;
+        case "zone42":
+        zone42.closed( getZoneName(evt.name) )
+        break;
+        case "zone43":
+        zone43.closed( getZoneName(evt.name) )
+        break;
+        case "zone44":
+        zone44.closed( getZoneName(evt.name) )
+        break;
+        case "zone45":
+        zone45.closed( getZoneName(evt.name) )
+        break;
+        case "zone46":
+        zone46.closed( getZoneName(evt.name) )
+        break;        
+        case "zone47":
+        zone47.closed( getZoneName(evt.name) )
+        break;
+        case "zone48":
+        zone48.closed( getZoneName(evt.name) )
+        break;
+        case "zone49":
+        zone49.closed( getZoneName(evt.name) )
+        break;
+        case "zone50":
+        zone50.closed( getZoneName(evt.name) )
+        break;
+        case "zone51":
+        zone51.closed( getZoneName(evt.name) )
+        break;
+        case "zone52":
+        zone52.closed( getZoneName(evt.name) )
+        break;
+        case "zone53":
+        zone53.closed( getZoneName(evt.name) )
+        break;
+        case "zone54":
+        zone54.closed( getZoneName(evt.name) )
+        break;
+        case "zone55":
+        zone55.closed( getZoneName(evt.name) )
+        break;
+        case "zone56":
+        zone56.closed( getZoneName(evt.name) )
+        break;        
+        case "zone57":
+        zone57.closed( getZoneName(evt.name) )
+        break;
+        case "zone58":
+        zone58.closed( getZoneName(evt.name) )
+        break;
+        case "zone59":
+        zone59.closed( getZoneName(evt.name) )
+        break;
+        case "zone60":
+        zone60.closed( getZoneName(evt.name) )
+        break;
+        case "zone61":
+        zone61.closed( getZoneName(evt.name) )
+        break;
+        case "zone62":
+        zone62.closed( getZoneName(evt.name) )
+        break;
+        case "zone63":
+        zone63.closed( getZoneName(evt.name) )
+        break;
+        case "zone64":
+        zone64.closed( getZoneName(evt.name) )
+        break;
+        case "zone65":
+        zone65.closed( getZoneName(evt.name) )
+        break;
     }
 
     // If the alarm is armed, send a notification if required.
@@ -330,7 +694,8 @@ def zoneClose(evt)
 }
 
 def getZoneName(name) {
-    switch (name) {
+    switch (name) 
+    {
         case "zone1":
         return "Zone 1"
         break;
@@ -361,6 +726,12 @@ def getZoneName(name) {
         case "zone10":
         return "Zone 10"
         break;
+        case "zone11":
+        return "Zone 11"
+        break;
+        case "zone12":
+        return "Zone 12"
+        break;
         case "zone13":
         return "Zone 13"
         break;
@@ -369,6 +740,156 @@ def getZoneName(name) {
         break;
         case "zone15":
         return "Zone 15"
+        break;
+        case "zone16":
+        return "Zone 16"
+        break;        
+        case "zone17":
+        return "Zone 17"
+        break;
+        case "zone18":
+        return "Zone 18"
+        break;
+        case "zone19":
+        return "Zone 19"
+        break;
+        case "zone20":
+        return "Zone 20"
+        break;
+        case "zone21":
+        return "Zone 21"
+        break;
+        case "zone22":
+        return "Zone 22"
+        break;
+        case "zone23":
+        return "Zone 23"
+        break;
+        case "zone24":
+        return "Zone 24"
+        break;
+        case "zone25":
+        return "Zone 25"
+        break;
+        case "zone26":
+        return "Zone 26"
+        break;        
+        case "zone27":
+        return "Zone 27"
+        break;
+        case "zone28":
+        return "Zone 28"
+        break;
+        case "zone29":
+        return "Zone 29"
+        break;
+        case "zone30":
+        return "Zone 30"
+        break;
+        case "zone31":
+        return "Zone 31"
+        break;
+        case "zone32":
+        return "Zone 32"
+        break;
+        case "zone33":
+        return "Zone 33"
+        break;
+        case "zone34":
+        return "Zone 34"
+        break;
+        case "zone35":
+        return "Zone 35"
+        break;
+        case "zone36":
+        return "Zone 36"
+        break;        
+        case "zone37":
+        return "Zone 37"
+        break;
+        case "zone38":
+        return "Zone 38"
+        break;
+        case "zone39":
+        return "Zone 39"
+        break;
+        case "zone40":
+        return "Zone 40"
+        break;
+        case "zone41":
+        return "Zone 41"
+        break;
+        case "zone42":
+        return "Zone 42"
+        break;
+        case "zone43":
+        return "Zone 43"
+        break;
+        case "zone44":
+        return "Zone 44"
+        break;
+        case "zone45":
+        return "Zone 45"
+        break;
+        case "zone46":
+        return "Zone 46"
+        break;        
+        case "zone47":
+        return "Zone 47"
+        break;
+        case "zone48":
+        return "Zone 48"
+        break;
+        case "zone49":
+        return "Zone 49"
+        break;
+        case "zone50":
+        return "Zone 50"
+        break;
+        case "zone51":
+        return "Zone 51"
+        break;
+        case "zone52":
+        return "Zone 52"
+        break;
+        case "zone53":
+        return "Zone 53"
+        break;
+        case "zone54":
+        return "Zone 54"
+        break;
+        case "zone55":
+        return "Zone 55"
+        break;
+        case "zone56":
+        return "Zone 56"
+        break;        
+        case "zone57":
+        return "Zone 57"
+        break;
+        case "zone58":
+        return "Zone 58"
+        break;
+        case "zone59":
+        return "Zone 59"
+        break;
+        case "zone60":
+        return "Zone 60"
+        break;
+        case "zone61":
+        return "Zone 61"
+        break;
+        case "zone62":
+        return "Zone 62"
+        break;
+        case "zone63":
+        return "Zone 63"
+        break;
+        case "zone64":
+        return "Zone 64"
+        break;
+        case "zone65":
+        return "Zone 65"
         break;
     }
 

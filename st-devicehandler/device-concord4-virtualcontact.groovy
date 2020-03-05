@@ -15,7 +15,7 @@
  */
 
 metadata {
-	definition (name: "Concord4 Virtual Contact", namespace: "scdozier", author: "CaesarsGhost") {
+	definition (name: "Concord4 Virtual Contact", namespace: "SannhetJaeger", author: "SannhetJaeger") {
     capability "Contact Sensor"
     capability "Sensor"
     command "open"

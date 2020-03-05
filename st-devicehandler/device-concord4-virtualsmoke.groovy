@@ -1,6 +1,6 @@
 /**
  *  Virtual Contact
- *
+ *  Enhanced 2020 SannhetJaeger
  *  Copyright 2014 scdozier
  *
  *  Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except
@@ -15,7 +15,7 @@
  */
 
 metadata {
-	definition (name: "Concord4 Virtual Smoke", namespace: "scdozier", author: "scdozier") {
+	definition (name: "Concord4 Virtual Smoke", namespace: "SannhetJaeger", author: "SannhetJaeger") {
     capability "Contact Sensor"
     capability "Smoke Detector"
     command "open"

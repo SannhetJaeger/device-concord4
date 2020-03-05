@@ -1,6 +1,6 @@
 /**
  *  Virtual Motion Detector
- *
+ *	Enhanced 2020 SannhetJaeger
  *  Copyright 2017 scdozier
  *
  *  Licensed under the Apache License, Version 2.0 (the "License"); you may not use this file except
@@ -15,7 +15,7 @@
  */
 
 metadata {
-	definition (name: "Concord4 Virtual Motion Detector", namespace: "scdozier", author: "scdozier") {
+	definition (name: "Concord4 Virtual Motion Detector", namespace: "SannhetJaeger", author: "SannhetJaeger") {
     capability "Contact Sensor"
     capability "Motion Sensor"
     command "open"
@@ -40,12 +40,12 @@ metadata {
 
 
 def open( String name ) {
-	log.debug "Open"   
+	log.debug("Setting device ${name} to open")
     sendEvent (name: "motion", value: "active" )
 }
 
 def closed( String name ) {
-	log.debug "Close"
+	log.debug("Setting device ${name} to closed")
     sendEvent (name: "motion", value: "inactive" )
 }
 // parse events into attributes
