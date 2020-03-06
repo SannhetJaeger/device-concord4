@@ -15,7 +15,7 @@
  */
 
 metadata {
-	definition (name: "Concord4 Virtual Smoke", namespace: "SannhetJaeger", author: "SannhetJaeger") {
+	definition (name: "device-concord4-virtualsmoke", namespace: "SannhetJaeger", author: "SannhetJaeger") {
     capability "Contact Sensor"
     capability "Smoke Detector"
     command "open"
