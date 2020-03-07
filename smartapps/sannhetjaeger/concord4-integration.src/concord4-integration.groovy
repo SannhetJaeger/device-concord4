@@ -6,8 +6,8 @@
  */
 definition(
     name: "Concord 4 Integration",
-    namespace: "SannhetJaeger",
-    author: "SannhetJaeger",
+    namespace: "sannhetjaeger",
+    author: "Sannhet Jaeger",
     description: "Handles the REST callback from concord and set virtual devices",
     category: "My Apps",
     iconUrl: "https://s3.amazonaws.com/smartapp-icons/Labs/Cat-ST-Labs.png",

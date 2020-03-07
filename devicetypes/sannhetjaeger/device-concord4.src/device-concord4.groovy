@@ -6,7 +6,7 @@
 
 metadata {
 	// Automatically generated. Make future change here.
-	definition (name: "Device Concord4", author: "sannhetjaeger", namespace: "Sannhet Jaeger") {
+	definition (name: "device concord4", author: "sannhetjaeger", namespace: "Sannhet Jaeger") {
         capability "Polling"
         capability "Lock"
         capability "Refresh"
