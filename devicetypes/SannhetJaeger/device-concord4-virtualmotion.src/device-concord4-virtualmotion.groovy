@@ -15,7 +15,7 @@
  */
 
 metadata {
-	definition (name: "device concord4 virtualmotion", namespace: "SannhetJaeger", author: "Sannhet Jaeger") {
+	definition (name: "device concord4 virtualmotion", namespace: "sannhetjaeger", author: "Sannhet Jaeger") {
     capability "Contact Sensor"
     capability "Motion Sensor"
     command "open"
