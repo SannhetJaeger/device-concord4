@@ -19,71 +19,71 @@ preferences {
 		input "concord4", "capability.lock"
 	}
 	section("Zones") {
-		input "zone1", "capability.contactSensor", title:"Zone 1"
-        input "zone2", "capability.contactSensor", title:"Zone 2"
-        input "zone3", "capability.contactSensor", title:"Zone 3"
-        input "zone4", "capability.contactSensor", title:"Zone 4"
-        input "zone5", "capability.contactSensor", title:"Zone 5"
-        input "zone6", "capability.contactSensor", title:"Zone 6"
- 		input "zone7", "capability.contactSensor", title:"Zone 7"
-        input "zone8", "capability.contactSensor", title:"Zone 8"
-        input "zone9", "capability.contactSensor", title:"Zone 9"
-        input "zone10", "capability.contactSensor", title:"Zone 10"
-        input "zone11", "capability.contactSensor", title:"Zone 11"
-        input "zone12", "capability.contactSensor", title:"Zone 12"
-        input "zone13", "capability.contactSensor", title:"Zone 13"
-        input "zone14", "capability.contactSensor", title:"Zone 14"
-        input "zone15", "capability.contactSensor", title:"Zone 15"
-        input "zone16", "capability.contactSensor", title:"Zone 16"
-        input "zone17", "capability.contactSensor", title:"Zone 17"
-        input "zone18", "capability.contactSensor", title:"Zone 18"
-        input "zone19", "capability.contactSensor", title:"Zone 19"
-        input "zone20", "capability.contactSensor", title:"Zone 20"
-		input "zone21", "capability.contactSensor", title:"Zone 21"
-        input "zone22", "capability.contactSensor", title:"Zone 22"
-        input "zone23", "capability.contactSensor", title:"Zone 23"
-        input "zone24", "capability.contactSensor", title:"Zone 24"
-        input "zone25", "capability.contactSensor", title:"Zone 25"
-        input "zone26", "capability.contactSensor", title:"Zone 26"
- 		input "zone27", "capability.contactSensor", title:"Zone 27"
-        input "zone28", "capability.contactSensor", title:"Zone 28"
-        input "zone29", "capability.contactSensor", title:"Zone 29"
-        input "zone30", "capability.contactSensor", title:"Zone 30"
-        input "zone31", "capability.contactSensor", title:"Zone 31"
-        input "zone32", "capability.contactSensor", title:"Zone 32"
-        input "zone33", "capability.contactSensor", title:"Zone 33"
-        input "zone34", "capability.contactSensor", title:"Zone 34"
-        input "zone35", "capability.contactSensor", title:"Zone 35"
-        input "zone36", "capability.contactSensor", title:"Zone 36"
- 		input "zone37", "capability.contactSensor", title:"Zone 37"
-        input "zone38", "capability.contactSensor", title:"Zone 38"
-        input "zone39", "capability.contactSensor", title:"Zone 39"
-        input "zone40", "capability.contactSensor", title:"Zone 40"
-		input "zone41", "capability.contactSensor", title:"Zone 41"
-        input "zone42", "capability.contactSensor", title:"Zone 42"
-        input "zone43", "capability.contactSensor", title:"Zone 43"
-        input "zone44", "capability.contactSensor", title:"Zone 44"
-        input "zone45", "capability.contactSensor", title:"Zone 45"
-        input "zone46", "capability.contactSensor", title:"Zone 46"
- 		input "zone47", "capability.contactSensor", title:"Zone 47"
-        input "zone48", "capability.contactSensor", title:"Zone 48"
-        input "zone49", "capability.contactSensor", title:"Zone 49"
-        input "zone50", "capability.contactSensor", title:"Zone 50"
-		input "zone51", "capability.contactSensor", title:"Zone 51"
-        input "zone52", "capability.contactSensor", title:"Zone 52"
-        input "zone53", "capability.contactSensor", title:"Zone 53"
-        input "zone54", "capability.contactSensor", title:"Zone 54"
-        input "zone55", "capability.contactSensor", title:"Zone 55"
-        input "zone56", "capability.contactSensor", title:"Zone 56"
- 		input "zone57", "capability.contactSensor", title:"Zone 57"
-        input "zone58", "capability.contactSensor", title:"Zone 58"
-        input "zone59", "capability.contactSensor", title:"Zone 59"
-        input "zone60", "capability.contactSensor", title:"Zone 60"
-		input "zone61", "capability.contactSensor", title:"Zone 61"
-        input "zone62", "capability.contactSensor", title:"Zone 62"
-        input "zone63", "capability.contactSensor", title:"Zone 63"
-        input "zone64", "capability.contactSensor", title:"Zone 64"
-        input "zone65", "capability.contactSensor", title:"Zone 65"
+		input "zone1", "capability.contactSensor", title:"CZ01-Front Door"
+        input "zone2", "capability.contactSensor", title:"CZ02-Interior Garage"
+        input "zone3", "capability.contactSensor", title:"CZ03-Car Door 1"
+        input "zone4", "capability.contactSensor", title:"CZ04-Car Door 2"
+        input "zone5", "capability.contactSensor", title:"CZ05-Garage Back Door"
+        input "zone6", "capability.contactSensor", title:"CZ06-Office Door"
+ 		input "zone7", "capability.contactSensor", title:"CZ07-Unused"
+        input "zone8", "capability.contactSensor", title:"CZ08-Living Room North Door"
+        input "zone9", "capability.contactSensor", title:"CZ09-Bedroom Door"
+        input "zone10", "capability.contactSensor", title:"CZ10-Den North Door"
+        input "zone11", "capability.contactSensor", title:"CZ11-Kitchen Door"
+        input "zone12", "capability.contactSensor", title:"CZ12-Living Room South Door"
+        input "zone13", "capability.contactSensor", title:"CZ13-Garage Motion"
+        input "zone14", "capability.contactSensor", title:"CZ14-Office Motion"
+        input "zone15", "capability.contactSensor", title:"CZ15-Downstairs Hallway Motion"
+        input "zone16", "capability.contactSensor", title:"CZ16-Family Room Motion"
+        input "zone17", "capability.contactSensor", title:"CZ17-Den Motion"
+        input "zone18", "capability.contactSensor", title:"CZ18-Kitchen Motion"
+        input "zone19", "capability.contactSensor", title:"CZ19-Living Room Motion"
+        input "zone20", "capability.contactSensor", title:"CZ20-Keypad"
+		input "zone21", "capability.contactSensor", title:"CZ21-Garage Window"
+        input "zone22", "capability.contactSensor", title:"CZ22-Garage Window"
+        input "zone23", "capability.contactSensor", title:"CZ23-Office Window"
+        input "zone24", "capability.contactSensor", title:"CZ24-Office Window"
+        input "zone25", "capability.contactSensor", title:"CZ25-Office Window"
+        input "zone26", "capability.contactSensor", title:"CZ26-Utility Room Window"
+ 		input "zone27", "capability.contactSensor", title:"CZ27-Joseph Back Window"
+        input "zone28", "capability.contactSensor", title:"CZ28-Joseph Side Window"
+        input "zone29", "capability.contactSensor", title:"CZ29-Nicole Side Window"
+        input "zone30", "capability.contactSensor", title:"CZ30-Nicole Front Window"
+        input "zone31", "capability.contactSensor", title:"CZ31-Nicole Front Window"
+        input "zone32", "capability.contactSensor", title:"CZ32-Sophie Front Window"
+        input "zone33", "capability.contactSensor", title:"CZ33-Sophie Front Window"
+        input "zone34", "capability.contactSensor", title:"CZ34-Family Room Window"
+        input "zone35", "capability.contactSensor", title:"CZ35-Family Room Window"
+        input "zone36", "capability.contactSensor", title:"CZ36-Family Room Window"
+ 		input "zone37", "capability.contactSensor", title:"CZ37-Bedroom Window"
+        input "zone38", "capability.contactSensor", title:"CZ38-Bedroom Window"
+        input "zone39", "capability.contactSensor", title:"CZ39-Bedroom Window"
+        input "zone40", "capability.contactSensor", title:"CZ40-Bedroom Window"
+		input "zone41", "capability.contactSensor", title:"CZ41-Bedroom Window"
+        input "zone42", "capability.contactSensor", title:"CZ42-Bedroom Window"
+        input "zone43", "capability.contactSensor", title:"CZ43-Bedroom Side Window"
+        input "zone44", "capability.contactSensor", title:"CZ44-Bathroom Window"
+        input "zone45", "capability.contactSensor", title:"CZ45-Bathroom Window"
+        input "zone46", "capability.contactSensor", title:"CZ46-Den Window"
+ 		input "zone47", "capability.contactSensor", title:"CZ47-Den Window"
+        input "zone48", "capability.contactSensor", title:"CZ48-Den Window"
+        input "zone49", "capability.contactSensor", title:"CZ49-Den Window"
+        input "zone50", "capability.contactSensor", title:"CZ50-Stephanie Window"
+		input "zone51", "capability.contactSensor", title:"CZ51-Kitchen Back Window"
+        input "zone52", "capability.contactSensor", title:"CZ52-Kitchen Back Window"
+        input "zone53", "capability.contactSensor", title:"CZ53-Kitchen Side Window"
+        input "zone54", "capability.contactSensor", title:"CZ54-Kitchen Side Window"
+        input "zone55", "capability.contactSensor", title:"CZ55-Kitchen Front Window"
+        input "zone56", "capability.contactSensor", title:"CZ56-Kitchen Front Window"
+ 		input "zone57", "capability.contactSensor", title:"CZ57-Dining Room Window"
+        input "zone58", "capability.contactSensor", title:"CZ58-Dining Room Window"
+        input "zone59", "capability.contactSensor", title:"CZ59-Living Room Window"
+        input "zone60", "capability.contactSensor", title:"CZ60-Living Room Window"
+		input "zone61", "capability.contactSensor", title:"CZ61-Living Room Window"
+        input "zone62", "capability.contactSensor", title:"CZ62-Living Room Window"
+        input "zone63", "capability.contactSensor", title:"CZ63-Den South Door"
+        input "zone64", "capability.contactSensor", title:"CZ64-Unused"
+        input "zone65", "capability.contactSensor", title:"CZ65-Unused"
 	}
     section("Presence Options") {
         input "autoArmDoorLock", "capability.lock", title: "Arm when door locked and all away and disarm on return with code?", required: false
@@ -697,199 +697,199 @@ def getZoneName(name) {
     switch (name) 
     {
         case "zone1":
-        return "Zone 1"
+        return "CZ01-Front Door"
         break;
         case "zone2":
-        return "Zone 2"
+        return "CZ02-Interior Garage"
         break;
         case "zone3":
-        return "Zone 3"
+        return "CZ03-Car Door 1"
         break;
         case "zone4":
-        return "Zone 4"
+        return "CZ04-Car Door 2"
         break;
         case "zone5":
-        return "Zone 5"
+        return "CZ05-Garage Back Door"
         break;
         case "zone6":
-        return "Zone 6"
+        return "CZ06-Office Door"
         break;        
         case "zone7":
-        return "Zone 7"
+        return "CZ07-Unused"
         break;
         case "zone8":
-        return "Zone 8"
+        return "CZ08-Living Room North Door"
         break;
         case "zone9":
-        return "Zone 9"
+        return "CZ09-Bedroom Door"
         break;
         case "zone10":
-        return "Zone 10"
+        return "CZ10-Den North Door"
         break;
         case "zone11":
-        return "Zone 11"
+        return "CZ11-Kitchen Door"
         break;
         case "zone12":
-        return "Zone 12"
+        return "CZ12-Living Room South Door"
         break;
         case "zone13":
-        return "Zone 13"
+        return "CZ13-Garage Motion"
         break;
         case "zone14":
-        return "Zone 14"
+        return "CZ14-Office Motion"
         break;
         case "zone15":
-        return "Zone 15"
+        return "CZ15-Downstairs Hallway Motion"
         break;
         case "zone16":
-        return "Zone 16"
+        return "CZ16-Family Room Motion"
         break;        
         case "zone17":
-        return "Zone 17"
+        return "CZ17-Den Motion"
         break;
         case "zone18":
-        return "Zone 18"
+        return "CZ18-Kitchen Motion"
         break;
         case "zone19":
-        return "Zone 19"
+        return "CZ19-Living Room Motion"
         break;
         case "zone20":
-        return "Zone 20"
+        return "CZ20-Keypad"
         break;
         case "zone21":
-        return "Zone 21"
+        return "CZ21-Garage Window"
         break;
         case "zone22":
-        return "Zone 22"
+        return "CZ22-Garage Window"
         break;
         case "zone23":
-        return "Zone 23"
+        return "CZ23-Office Window"
         break;
         case "zone24":
-        return "Zone 24"
+        return "CZ24-Office Window"
         break;
         case "zone25":
-        return "Zone 25"
+        return "CZ25-Office Window"
         break;
         case "zone26":
-        return "Zone 26"
+        return "CZ26-Utility Room Window"
         break;        
         case "zone27":
-        return "Zone 27"
+        return "CZ27-Joseph Back Window"
         break;
         case "zone28":
-        return "Zone 28"
+        return "CZ28-Joseph Side Window"
         break;
         case "zone29":
-        return "Zone 29"
+        return "CZ29-Nicole Side Window"
         break;
         case "zone30":
-        return "Zone 30"
+        return "CZ30-Nicole Front Window"
         break;
         case "zone31":
-        return "Zone 31"
+        return "CZ31-Nicole Front Window"
         break;
         case "zone32":
-        return "Zone 32"
+        return "CZ32-Sophie Front Window"
         break;
         case "zone33":
-        return "Zone 33"
+        return "CZ33-Sophie Front Window"
         break;
         case "zone34":
-        return "Zone 34"
+        return "CZ34-Family Room Window"
         break;
         case "zone35":
-        return "Zone 35"
+        return "CZ35-Family Room Window"
         break;
         case "zone36":
-        return "Zone 36"
+        return "CZ36-Family Room Window"
         break;        
         case "zone37":
-        return "Zone 37"
+        return "CZ37-Bedroom Window"
         break;
         case "zone38":
-        return "Zone 38"
+        return "CZ38-Bedroom Window"
         break;
         case "zone39":
-        return "Zone 39"
+        return "CZ39-Bedroom Window"
         break;
         case "zone40":
-        return "Zone 40"
+        return "CZ40-Bedroom Window"
         break;
         case "zone41":
-        return "Zone 41"
+        return "CZ41-Bedroom Window"
         break;
         case "zone42":
-        return "Zone 42"
+        return "CZ42-Bedroom Window"
         break;
         case "zone43":
-        return "Zone 43"
+        return "CZ43-Bedroom Side Window"
         break;
         case "zone44":
-        return "Zone 44"
+        return "CZ44-Bathroom Window"
         break;
         case "zone45":
-        return "Zone 45"
+        return "CZ45-Bathroom Window"
         break;
         case "zone46":
-        return "Zone 46"
+        return "CZ46-Den Window"
         break;        
         case "zone47":
-        return "Zone 47"
+        return "CZ47-Den Window"
         break;
         case "zone48":
-        return "Zone 48"
+        return "CZ48-Den Window"
         break;
         case "zone49":
-        return "Zone 49"
+        return "CZ49-Den Window"
         break;
         case "zone50":
-        return "Zone 50"
+        return "CZ50-Stephanie Window"
         break;
         case "zone51":
-        return "Zone 51"
+        return "CZ51-Kitchen Back Window"
         break;
         case "zone52":
-        return "Zone 52"
+        return "CZ52-Kitchen Back Window"
         break;
         case "zone53":
-        return "Zone 53"
+        return "CZ53-Kitchen Side Window"
         break;
         case "zone54":
-        return "Zone 54"
+        return "CZ54-Kitchen Side Window"
         break;
         case "zone55":
-        return "Zone 55"
+        return "CZ55-Kitchen Front Window"
         break;
         case "zone56":
-        return "Zone 56"
+        return "CZ56-Kitchen Front Window"
         break;        
         case "zone57":
-        return "Zone 57"
+        return "CZ57-Dining Room Window"
         break;
         case "zone58":
-        return "Zone 58"
+        return "CZ58-Dining Room Window"
         break;
         case "zone59":
-        return "Zone 59"
+        return "CZ59-Living Room Window"
         break;
         case "zone60":
-        return "Zone 60"
+        return "CZ60-Living Room Window"
         break;
         case "zone61":
-        return "Zone 61"
+        return "CZ61-Living Room Window"
         break;
         case "zone62":
-        return "Zone 62"
+        return "CZ62-Living Room Window"
         break;
         case "zone63":
-        return "Zone 63"
+        return "CZ63-Den South Door"
         break;
         case "zone64":
-        return "Zone 64"
+        return "CZ64-Unused"
         break;
         case "zone65":
-        return "Zone 65"
+        return "CZ65-Unused"
         break;
     }
 
